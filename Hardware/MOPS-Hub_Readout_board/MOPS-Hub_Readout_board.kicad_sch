@@ -1,0 +1,82 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "a3375bfe-8dd9-434c-81ca-e448ec82ee2a")
+	(paper "A4")
+	(title_block
+		(date "2024-03-04")
+		(rev "0.1")
+		(company "Felix Sebastian Nitz ")
+	)
+	(lib_symbols)
+	(bus_alias "JTAG"
+		(members "TCK" "TDI" "TDO" "TMS")
+	)
+	(bus_alias "UART"
+		(members "TXD" "RXD")
+	)
+	(sheet
+		(at 107.95 50.8)
+		(size 15.24 19.05)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a1e32796-f405-4e11-b1e6-13e59bd9361f")
+		(property "Sheetname" "FTDI"
+			(at 107.95 50.0884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "FTDI.kicad_sch"
+			(at 107.95 70.4346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "{JTAG}" bidirectional
+			(at 123.19 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "29757794-e5bd-4a85-8f40-a027c3635b1e")
+		)
+		(pin "{UART}" bidirectional
+			(at 123.19 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "dbca4317-5cef-4d25-82f4-439f17024010")
+		)
+		(instances
+			(project "MOPS-Hub_Readout_board"
+				(path "/a3375bfe-8dd9-434c-81ca-e448ec82ee2a"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
