@@ -113,7 +113,7 @@
 				)
 			)
 		)
-		(symbol "Connector:USB_C_Receptacle_USB2.0_14P"
+		(symbol "Connector:USB_C_Receptacle_USB2.0_16P"
 			(pin_names
 				(offset 1.016)
 			)
@@ -128,7 +128,7 @@
 					)
 				)
 			)
-			(property "Value" "USB_C_Receptacle_USB2.0_14P"
+			(property "Value" "USB_C_Receptacle_USB2.0_16P"
 				(at 0 19.685 0)
 				(effects
 					(font
@@ -154,7 +154,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "USB 2.0-only 14P Type-C Receptacle connector"
+			(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -181,10 +181,32 @@
 					(hide yes)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_14P_0_0"
+			(symbol "USB_C_Receptacle_USB2.0_16P_0_0"
 				(rectangle
 					(start -0.254 -17.78)
 					(end 0.254 -16.764)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 10.16 -14.986)
+					(end 9.144 -15.494)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 10.16 -12.446)
+					(end 9.144 -12.954)
 					(stroke
 						(width 0)
 						(type default)
@@ -271,7 +293,7 @@
 					)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_14P_0_1"
+			(symbol "USB_C_Receptacle_USB2.0_16P_0_1"
 				(rectangle
 					(start -10.16 17.78)
 					(end 10.16 -17.78)
@@ -472,7 +494,7 @@
 					)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_14P_1_1"
+			(symbol "USB_C_Receptacle_USB2.0_16P_1_1"
 				(pin passive line
 					(at 0 -22.86 90)
 					(length 5.08)
@@ -574,6 +596,24 @@
 						)
 					)
 					(number "A7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -12.7 180)
+					(length 5.08)
+					(name "SBU1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -700,6 +740,24 @@
 						)
 					)
 					(number "B7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -15.24 180)
+					(length 5.08)
+					(name "SBU2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4220,6 +4278,114 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f8c763b9-286e-4499-991c-95024c135af7")
+	)
+	(no_connect
+		(at 208.28 134.62)
+		(uuid "1fffbfa1-b5ff-411d-8172-d92c191440f7")
+	)
+	(no_connect
+		(at 208.28 111.76)
+		(uuid "219657f8-75e9-436d-be7d-f234cf8d25b8")
+	)
+	(no_connect
+		(at 208.28 106.68)
+		(uuid "28190688-c2bc-4b68-a715-36329a83eb68")
+	)
+	(no_connect
+		(at 208.28 71.12)
+		(uuid "3eac6e26-f071-402c-b902-c50e1dab7e05")
+	)
+	(no_connect
+		(at 44.45 83.82)
+		(uuid "47a2fc72-ee43-431a-a01a-3313a1a0565b")
+	)
+	(no_connect
+		(at 208.28 99.06)
+		(uuid "4b391a9a-20a6-4a46-8fc3-fb8f35651f32")
+	)
+	(no_connect
+		(at 208.28 81.28)
+		(uuid "52444902-5dda-438c-b2ea-18b48a8a2f13")
+	)
+	(no_connect
+		(at 208.28 127)
+		(uuid "5c751b7c-58a1-4cb2-9085-a2a566cdbb2b")
+	)
+	(no_connect
+		(at 208.28 73.66)
+		(uuid "60481476-28b2-4c7a-8556-b8736e61321d")
+	)
+	(no_connect
+		(at 208.28 96.52)
+		(uuid "69233ba2-c3a1-4b9f-afe8-54909aa1bad8")
+	)
+	(no_connect
+		(at 208.28 55.88)
+		(uuid "6a8d2b92-649e-414e-aaad-5dd77ce21905")
+	)
+	(no_connect
+		(at 208.28 116.84)
+		(uuid "72e5672c-9ad3-492d-a32c-1d5b7a212096")
+	)
+	(no_connect
+		(at 208.28 137.16)
+		(uuid "79bb2007-80a4-492b-a534-5820c7dfeafa")
+	)
+	(no_connect
+		(at 208.28 104.14)
+		(uuid "81c845f0-6a69-4ac7-b09d-dddf764638d6")
+	)
+	(no_connect
+		(at 208.28 60.96)
+		(uuid "8a025316-97e8-48ec-9b4b-1445b7bc6637")
+	)
+	(no_connect
+		(at 208.28 101.6)
+		(uuid "8c9158c5-bfd4-4940-a69a-4a5b4c9db5da")
+	)
+	(no_connect
+		(at 208.28 58.42)
+		(uuid "a85e6ae8-fb76-4c33-a99c-235a6a32ebcc")
+	)
+	(no_connect
+		(at 208.28 93.98)
+		(uuid "b4b0419f-7d2b-4884-b464-8cffc16fbf7b")
+	)
+	(no_connect
+		(at 208.28 124.46)
+		(uuid "ba2165b0-cf13-4833-8129-ae7216b3fae5")
+	)
+	(no_connect
+		(at 208.28 114.3)
+		(uuid "bd3b34a6-16f0-4cac-b604-46e6580e14ac")
+	)
+	(no_connect
+		(at 208.28 83.82)
+		(uuid "d14017d8-cd83-4cfd-a4b2-83eed292e424")
+	)
+	(no_connect
+		(at 208.28 78.74)
+		(uuid "d7fddfac-1d27-4a51-8f98-644e78325766")
+	)
+	(no_connect
+		(at 208.28 68.58)
+		(uuid "e7113510-a7a2-4606-b344-d55022a876a3")
+	)
+	(no_connect
+		(at 208.28 129.54)
+		(uuid "e9851003-9b57-488f-9aaf-a23f44f3850b")
+	)
+	(no_connect
+		(at 208.28 66.04)
+		(uuid "eaf6ef2d-80ca-40e2-ba50-8dc2118717b3")
+	)
+	(no_connect
+		(at 208.28 76.2)
+		(uuid "f70fae41-021f-4e59-9cda-5cfeea4f82c6")
+	)
+	(no_connect
+		(at 44.45 86.36)
+		(uuid "fd43d2bc-901b-43c9-9c63-7d23e9eb8079")
 	)
 	(bus_entry
 		(at 218.44 48.26)
@@ -9870,7 +10036,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:USB_C_Receptacle_USB2.0_14P")
+		(lib_id "Connector:USB_C_Receptacle_USB2.0_16P")
 		(at 29.21 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9879,7 +10045,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "70b8b13b-1083-4ccb-abdc-11d42db33ede")
-		(property "Reference" "J1"
+		(property "Reference" "J?"
 			(at 29.21 48.26 0)
 			(effects
 				(font
@@ -9887,7 +10053,7 @@
 				)
 			)
 		)
-		(property "Value" "USB_C_Receptacle_USB2.0_14P"
+		(property "Value" "USB_C_Receptacle_USB2.0_16P"
 			(at 29.21 50.8 0)
 			(effects
 				(font
@@ -9895,7 +10061,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4110"
 			(at 33.02 71.12 0)
 			(effects
 				(font
@@ -9913,7 +10079,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "USB 2.0-only 14P Type-C Receptacle connector"
+		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
 			(at 29.21 71.12 0)
 			(effects
 				(font
@@ -9967,10 +10133,16 @@
 		(pin "A9"
 			(uuid "e94ac9b3-17d5-4682-8490-87b480b35d02")
 		)
+		(pin "A8"
+			(uuid "9badf74e-3623-4464-b15f-afcac0704e3b")
+		)
+		(pin "B8"
+			(uuid "ad4f4921-4d1f-40db-8425-7209102cf388")
+		)
 		(instances
 			(project "MOPS-Hub_Readout_board"
 				(path "/a3375bfe-8dd9-434c-81ca-e448ec82ee2a/a1e32796-f405-4e11-b1e6-13e59bd9361f"
-					(reference "J1")
+					(reference "J?")
 					(unit 1)
 				)
 			)
