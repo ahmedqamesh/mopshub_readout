@@ -236,9 +236,12 @@
   },
   "libraries": {
     "pinned_footprint_libs": [
-      "ReadoutBoard_Lib"
+      "ReadoutBoard_Footprints"
     ],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "Simbols",
+      "ReadoutBoard_Simbols"
+    ]
   },
   "meta": {
     "filename": "MOPS-Hub_Readout_board.kicad_pro",
