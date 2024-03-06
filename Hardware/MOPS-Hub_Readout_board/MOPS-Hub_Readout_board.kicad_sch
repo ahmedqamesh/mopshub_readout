@@ -2229,6 +2229,7 @@
 	)
 	(label "ETH.TD2_P"
 		(at 224.79 93.98 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2261,6 +2262,7 @@
 	)
 	(label "ETH.TD1_N"
 		(at 224.79 96.52 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2271,6 +2273,7 @@
 	)
 	(label "ETH.TD1_P"
 		(at 224.79 99.06 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2281,6 +2284,7 @@
 	)
 	(label "ETH.TD3_P"
 		(at 224.79 88.9 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2291,6 +2295,7 @@
 	)
 	(label "ETH.TD3_N"
 		(at 224.79 86.36 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2334,6 +2339,7 @@
 	)
 	(label "ETH.TD0_P"
 		(at 224.79 104.14 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2388,6 +2394,7 @@
 	)
 	(label "ETH.TD0_N "
 		(at 224.79 101.6 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2409,6 +2416,7 @@
 	)
 	(label "ETH.TD2_N"
 		(at 224.79 91.44 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
