@@ -1,0 +1,2 @@
+DEFAULT_FILE atom counter_trigger.v
+DEFAULT_ARCHITECTURE atom counter_trigger

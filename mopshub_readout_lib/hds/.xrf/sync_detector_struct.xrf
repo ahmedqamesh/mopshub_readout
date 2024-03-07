@@ -1,0 +1,57 @@
+DESIGN sync_detector
+VIEW struct.bd
+NO_GRAPHIC 0
+DESIGN sync_detector
+VIEW struct.bd
+NO_GRAPHIC 9
+DESIGN sync_detector
+VIEW symbol.sb
+GRAPHIC 1,0 9 0 
+DESIGN sync_detector
+VIEW struct.bd
+GRAPHIC 47,0 10 0 
+DESIGN sync_detector
+VIEW symbol.sb
+GRAPHIC 189,0 14 0 
+DESIGN sync_detector
+VIEW symbol.sb
+GRAPHIC 594,0 15 0 
+DESIGN sync_detector
+VIEW symbol.sb
+GRAPHIC 507,0 16 0 
+DESIGN sync_detector
+VIEW symbol.sb
+GRAPHIC 954,0 17 0 
+DESIGN sync_detector
+VIEW symbol.sb
+GRAPHIC 959,0 18 0 
+DESIGN sync_detector
+VIEW symbol.sb
+GRAPHIC 3168,0 19 0 
+DESIGN sync_detector
+VIEW symbol.sb
+GRAPHIC 3173,0 20 0 
+DESIGN sync_detector
+VIEW struct.bd
+GRAPHIC 49,0 23 0 
+DESIGN sync_detector
+VIEW symbol.sb
+GRAPHIC 1,0 25 0 
+DESIGN sync_detector
+VIEW struct.bd
+NO_GRAPHIC 37
+DESIGN sync_detector
+VIEW struct.bd
+GRAPHIC 2189,0 40 0 
+DESIGN sync_detector
+VIEW struct.bd
+GRAPHIC 2163,0 137 0 
+DESIGN sync_detector
+VIEW struct.bd
+GRAPHIC 109,0 289 0 
+DESIGN sync_detector
+VIEW struct.bd
+NO_GRAPHIC 367
+DESIGN sync_detector
+VIEW struct.bd
+GRAPHIC 51,0 369 0 

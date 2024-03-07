@@ -1,0 +1,51 @@
+[DesignChecker]
+mopshub_readout_lib = $HDS_PROJECT_DIR/mopshub_readout_lib/designcheck
+[ModelSim]
+mopshub_readout_canakari = $HDS_PROJECT_DIR/mopshub_readout-canakari/mopshub_readout_canakari/work
+mopshub_readout_lib = $HDS_PROJECT_DIR/work
+top_lib = $HDS_PROJECT_DIR/work
+[ModelSim_Invoke_Dir]
+[Precision]
+mopshub_readout_lib = $HDS_PROJECT_DIR/mopshub_readout_lib/ps
+[QuestaSim]
+ipbus_firmware_lib = $HDS_PROJECT_DIR/work
+mopshub_readout_canakari = $HDS_PROJECT_DIR/work
+mopshub_readout_lib = $HDS_PROJECT_DIR/work
+top_lib = $HDS_PROJECT_DIR/work
+[QuestaSim_Invoke_Dir]
+mopshub_readout_lib = $HDS_PROJECT_DIR/mopshub_readout_lib/sim
+top_lib = /home/dcs/git/CANAkari/MOPSv2/top_lib/sim
+vivado_lib = /run/media/dcs/data2/vivado_compiled_lib
+[SvAssistant]
+mopshub_readout_lib = $HDS_PROJECT_DIR/mopshub_readout_lib/svassistant
+[hdl]
+ipbus_firmware_lib = $HDS_PROJECT_DIR/ipbus-firmware
+mopshub_readout_canakari = $HDS_PROJECT_DIR/mopshub-canakari/single_clock_single_reset/source
+mopshub_readout_lib = $HDS_PROJECT_DIR/mopshub_readout_lib/hdl
+top_lib = /home/dcs/git/mopshub_readout/CANAkari/MOPSv2/top_lib/hdl
+[hds]
+ipbus_firmware_lib = $HDS_PROJECT_DIR/ipbus-firmware/hds
+mopshub_readout_canakari = $HDS_PROJECT_DIR/mopshub_readout-canakari/mopshub_readout_canakari/hds
+mopshub_readout_lib = $HDS_PROJECT_DIR/mopshub_readout_lib/hds
+top_lib = /home/dcs/git/mopshub_readout/CANAkari/MOPSv2/top_lib/hds
+[hds_settings]
+default_library = exemplar
+design_root = mopshub_readout_lib.mopshub_readout(mopshub_readout)mopshub_readout/struct.bd
+library_search_path = MOPSv2_lib mopshub_readout_reconfig_lib mopshub_readout_canakari CANdecoder ftrim mopshub_readout_lib mopshub_readout_testbench
+version = 2
+[includes_search_path]
+ipbus_firmware_lib = $MOPSHUB_LIB2/opencores_spi/firmware/hdl;$ipbus_firmware_lib;$ipbus_firmware_lib/components/opencores_spi/firmware/hdl
+[library_files_inclusion]
+ipbus_firmware_lib = specify
+mopshub_readout_canakari = specify
+mopshub_readout_lib = specify
+top_lib = all
+vivado_lib = all
+[library_type]
+ipbus_firmware_lib = regular
+mopshub_readout_canakari = regular
+mopshub_readout_lib = regular
+top_lib = regular
+vivado_lib = downstream_only
+[shared]
+others = $HDS_TEAM_HOME/shared.hdp

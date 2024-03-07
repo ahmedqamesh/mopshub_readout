@@ -1,0 +1,720 @@
+DESIGN elink_core
+VIEW struct.bd
+NO_GRAPHIC 0
+DESIGN elink_core
+VIEW struct.bd
+NO_GRAPHIC 9
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 1,0 9 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 47,0 10 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 3489,0 14 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 223,0 15 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 243,0 16 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 831,0 17 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 1005,0 18 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 1716,0 19 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 3460,0 20 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 3314,0 21 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 2035,0 22 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 2040,0 23 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 2045,0 24 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 4981,0 25 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 3651,0 26 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 5670,0 27 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 4147,0 28 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 4176,0 29 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 2256,0 30 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 3409,0 31 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 8433,0 32 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 6430,0 33 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 6527,0 34 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 6532,0 35 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 6918,0 36 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 7088,0 37 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 8147,0 38 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 8152,0 39 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 8906,0 40 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 15593,0 41 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 15588,0 42 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 11761,0 43 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 11820,0 44 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 11881,0 45 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 11886,0 46 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 13424,0 47 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 14466,0 48 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 17387,0 49 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 13419,0 50 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 13646,0 51 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 17786,0 52 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 17791,0 53 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 15461,0 54 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 15686,0 55 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 15691,0 56 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 15696,0 57 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 15701,0 58 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 15706,0 59 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 15857,0 60 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 15923,0 61 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 15982,0 62 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 16178,0 63 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 16289,0 64 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 17850,0 65 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 16976,0 66 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 16981,0 67 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 17718,0 68 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 17392,0 69 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 17555,0 70 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 18039,0 71 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 49,0 74 0 
+DESIGN elink_core
+VIEW symbol.sb
+GRAPHIC 1,0 76 0 
+DESIGN elink_core
+VIEW struct.bd
+NO_GRAPHIC 122
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 3950,0 125 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 27211,0 126 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 27217,0 127 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 2099,0 128 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 3962,0 129 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 28962,0 130 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 20712,0 131 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 20706,0 132 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 20700,0 133 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 29446,0 136 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 28615,0 137 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 28621,0 138 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 28629,0 139 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 28643,0 140 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 28649,0 141 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 28998,0 142 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 29004,0 143 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 29010,0 144 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 37978,0 147 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 38020,0 148 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 38026,0 149 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 13972,0 150 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 14291,0 151 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 23753,0 152 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 38072,0 153 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 38066,0 154 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 38060,0 155 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 47480,0 158 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 47536,0 159 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 47542,0 160 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 47568,0 161 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 47530,0 162 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 47524,0 163 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 47560,0 164 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 47554,0 165 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 47548,0 166 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 4180,0 169 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 4190,0 170 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 4268,0 171 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 6738,0 172 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 4196,0 173 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 4214,0 174 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 4202,0 175 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 39039,0 178 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 39075,0 179 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 13638,0 180 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 13646,0 181 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 39081,0 182 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 13630,0 183 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 13650,0 184 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 39396,0 187 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 33090,0 188 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 33769,0 189 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 32530,0 190 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 33096,0 191 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 33078,0 192 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 32488,0 193 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 28926,0 196 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 28940,0 197 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 28946,0 198 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 28962,0 199 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 28649,0 200 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 23753,0 201 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 47524,0 202 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 30971,0 203 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 28669,0 204 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 14925,0 205 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 47476,0 206 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 29229,0 207 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 4006,0 208 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 3866,0 211 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 18056,0 212 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 13292,0 213 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 459,0 214 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 48676,0 215 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 50065,0 216 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 4112,0 217 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 4104,0 218 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 4120,0 219 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 4096,0 220 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 1048,0 221 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 13302,0 222 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 56846,0 223 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 32239,0 224 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 4310,0 225 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 51046,0 226 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 4214,0 227 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 6738,0 228 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 34440,0 229 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 13646,0 230 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 32530,0 231 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 6746,0 232 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 4128,0 233 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 4318,0 234 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 16493,0 235 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 32010,0 236 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 4090,0 237 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 36011,0 238 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 56880,0 239 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 32793,0 240 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 23062,0 241 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 11036,0 242 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 3924,0 245 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 17726,0 246 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 7135,0 247 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 50085,0 248 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 3978,0 249 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 47594,0 250 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 2147,0 251 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 28429,0 252 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 14197,0 253 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 10525,0 254 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 52238,0 255 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 3962,0 256 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 11050,0 257 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 13992,0 258 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 30971,0 259 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 3968,0 260 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 28669,0 261 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 4296,0 262 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 28677,0 263 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 14189,0 264 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 16509,0 265 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 4074,0 266 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 47476,0 267 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 14925,0 268 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 47110,0 269 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 11026,0 270 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 181,0 273 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 2121,0 274 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 209,0 275 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 4224,0 276 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 49303,0 277 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 4128,0 278 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 8702,0 279 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 7639,0 280 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 13157,0 281 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 45164,0 282 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 45184,0 283 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 20865,0 284 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 20873,0 285 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 20915,0 286 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 20921,0 287 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 20927,0 288 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 28220,0 289 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 49287,0 290 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 53201,0 291 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 53209,0 292 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 670,0 295 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 3968,0 296 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 49277,0 297 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 4006,0 298 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 8752,0 299 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 8716,0 300 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 9629,0 301 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 52238,0 302 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 7653,0 303 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 20457,0 304 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 21408,0 305 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 45200,0 306 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 21416,0 307 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 50475,0 308 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 49271,0 309 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 59052,0 310 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 51432,0 313 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 51444,0 314 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 16493,0 315 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 51458,0 316 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 51450,0 317 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 51046,0 318 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 4146,0 321 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 4342,0 512 0 
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 20445,0 640 0 
+DESIGN elink_core
+VIEW struct.bd
+NO_GRAPHIC 779
+DESIGN elink_core
+VIEW struct.bd
+GRAPHIC 51,0 781 0 
