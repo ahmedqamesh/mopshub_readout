@@ -1,4 +1,0 @@
-INCLUDE list {
- DEFAULT atom 1
-}
-DIALECT atom VERILOG_95
