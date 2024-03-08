@@ -1,5 +1,0 @@
-(fp_lib_table
-  (version 7)
-  (lib (name "ReadoutBoard_Lib")(type "KiCad")(uri "${KIPRJMOD}/ReadoutBoard_Lib.pretty")(options "")(descr ""))
-  (lib (name "ReadoutBoard_Footprints")(type "KiCad")(uri "${KIPRJMOD}/Library/ReadoutBoard_Footprints.pretty")(options "")(descr ""))
-)
