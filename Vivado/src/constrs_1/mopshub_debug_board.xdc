@@ -9,7 +9,6 @@ set_property IOSTANDARD LVCMOS33 [get_ports rx0_0]
 set_property PACKAGE_PIN A20 [get_ports tx0_0]
 set_property IOSTANDARD LVCMOS33 [get_ports tx0_0]
 
-
 ## DBG Signals
 #GPIO_LED_0 [DS38.2]
 set_property PACKAGE_PIN AG14 [get_ports rx_data_rdy_0]
@@ -80,23 +79,23 @@ set_property IOSTANDARD DIFF_SSTL12_DCI [get_ports rx_elink_n_0]
 ############################################################
 # To go to HP0 [FMC J2 p=5/n=6] LA00_CC
 # Elink clock
-#set_property PACKAGE_PIN Y4 [get_ports clk_sys_clk_p]
+set_property PACKAGE_PIN Y4 [get_ports CLK_IN1_D_0_clk_p]
 #Internal clock
-set_property PACKAGE_PIN AL8 [get_ports clk_sys_clk_p]
-set_property PACKAGE_PIN AL7 [get_ports clk_sys_clk_n]
-set_property IOSTANDARD DIFF_SSTL12_DCI [get_ports clk_sys_clk_p]
-set_property IOSTANDARD DIFF_SSTL12_DCI [get_ports clk_sys_clk_n]
+#set_property PACKAGE_PIN AL8 [get_ports CLK_IN1_D_0_clk_p]
+#set_property PACKAGE_PIN AL7 [get_ports CLK_IN1_D_0_clk_n]
+set_property IOSTANDARD DIFF_SSTL12_DCI [get_ports CLK_IN1_D_0_clk_p]
+set_property IOSTANDARD DIFF_SSTL12_DCI [get_ports CLK_IN1_D_0_clk_n]
 
 #clock outputs go to HP1
-#set_property PACKAGE_PIN AE5 [get_ports clk_out_p_0]
-set_property PACKAGE_PIN Y4 [get_ports clk_out_p_0]
+set_property PACKAGE_PIN AE5 [get_ports clk_out_p_0]
+#set_property PACKAGE_PIN Y4 [get_ports clk_out_p_0]
 set_property IOSTANDARD DIFF_SSTL12_DCI [get_ports clk_out_p_0]
 set_property IOSTANDARD DIFF_SSTL12_DCI [get_ports clk_out_n_0]
 
 #Internal clock
-#set_property IOSTANDARD DIFF_SSTL12 [get_ports user_si570_sysclk_*]
-#set_property PACKAGE_PIN AL8 [get_ports user_si570_sysclk_clk_p]
-#set_property PACKAGE_PIN AL7 [get_ports user_si570_sysclk_clk_n]
+set_property IOSTANDARD DIFF_SSTL12 [get_ports user_si570_sysclk_*]
+set_property PACKAGE_PIN AL8 [get_ports user_si570_sysclk_clk_p]
+set_property PACKAGE_PIN AL7 [get_ports user_si570_sysclk_clk_n]
 ############################################################
 # Ethernet Core Constraints                                 #
 ############################################################
@@ -108,7 +107,7 @@ set_property IOSTANDARD LVDS_25 [get_ports sysclk_n_0]
 set_property PACKAGE_PIN G21 [get_ports sysclk_p_0]
 set_property PACKAGE_PIN F21 [get_ports sysclk_n_0]
 
-set_property LOC GTHE4_CHANNEL_X1Y14 [get_cells -hier -filter name=~mopshub_mb_i/*GTHE4_CHANNEL_PRIM_INST]
+set_property LOC GTHE4_CHANNEL_X1Y14 [get_cells -hier -filter name=~mopshub_top_debug_16bus_i/*GTHE4_CHANNEL_PRIM_INST]
 # SFP0 tx enable
 set_property PACKAGE_PIN A12 [get_ports sfp_enable_0]
 set_property IOSTANDARD LVCMOS25 [get_ports sfp_enable_0]
