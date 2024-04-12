@@ -1297,23 +1297,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/../../home/dcs/git/mopshub/mopshub_lib/hdl"
+value "/../../home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/../../home/dcs/git/mopshub/mopshub_lib/hds"
+value "/../../home/dcs/git/mopshub_readout/mopshub_readout_lib/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/../../home/dcs/git/mopshub/mopshub_lib/hds/mopshub_measurement_board/symbol.sb.info"
+value "/../../home/dcs/git/mopshub_readout/mopshub_readout_lib/hds/mopshub_readout/symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/../../home/dcs/git/mopshub/mopshub_lib/hds/mopshub_measurement_board/symbol.sb.user"
+value "/../../home/dcs/git/mopshub_readout/mopshub_readout_lib/hds/mopshub_readout/symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
-value "/../../home/dcs/git/mopshub/mopshub_lib/hds"
+value "/../../home/dcs/git/mopshub_readout/mopshub_readout_lib/hds"
 )
 (vvPair
 variable "appl"
@@ -1329,31 +1329,31 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "/../../home/dcs/git/mopshub/mopshub_lib/hds/mopshub_measurement_board"
+value "/../../home/dcs/git/mopshub_readout/mopshub_readout_lib/hds/mopshub_readout"
 )
 (vvPair
 variable "d_logical"
-value "/../../home/dcs/git/mopshub/mopshub_lib/hds/mopshub_measurement_board"
+value "/../../home/dcs/git/mopshub_readout/mopshub_readout_lib/hds/mopshub_readout"
 )
 (vvPair
 variable "date"
-value "03/07/24"
+value "04/12/24"
 )
 (vvPair
 variable "day"
-value "Thu"
+value "Fri"
 )
 (vvPair
 variable "day_long"
-value "Thursday"
+value "Friday"
 )
 (vvPair
 variable "dd"
-value "07"
+value "12"
 )
 (vvPair
 variable "entity_name"
-value "mopshub_measurement_board"
+value "mopshub_readout"
 )
 (vvPair
 variable "ext"
@@ -1377,7 +1377,7 @@ value "dcs"
 )
 (vvPair
 variable "graphical_source_date"
-value "03/07/24"
+value "04/12/24"
 )
 (vvPair
 variable "graphical_source_group"
@@ -1389,7 +1389,7 @@ value "chipdev2.physik.uni-wuppertal.de"
 )
 (vvPair
 variable "graphical_source_time"
-value "10:49:33"
+value "13:09:39"
 )
 (vvPair
 variable "group"
@@ -1405,11 +1405,11 @@ value "Verilog"
 )
 (vvPair
 variable "library"
-value "mopshub_lib"
+value "mopshub_readout_lib"
 )
 (vvPair
 variable "library_downstream_HdsLintPlugin"
-value "$HDS_PROJECT_DIR/mopshub_lib/designcheck"
+value "$HDS_PROJECT_DIR/mopshub_readout_lib/designcheck"
 )
 (vvPair
 variable "library_downstream_ModelSimCompiler"
@@ -1417,7 +1417,7 @@ value "$HDS_PROJECT_DIR/work"
 )
 (vvPair
 variable "library_downstream_PrecisionSynthesisDataPrep"
-value "$HDS_PROJECT_DIR/mopshub_lib/ps"
+value "$HDS_PROJECT_DIR/mopshub_readout_lib/ps"
 )
 (vvPair
 variable "library_downstream_QuestaSimCompiler"
@@ -1425,35 +1425,35 @@ value "$HDS_PROJECT_DIR/work"
 )
 (vvPair
 variable "library_downstream_QuestaSimSimulator"
-value "$HDS_PROJECT_DIR/mopshub_lib/sim"
+value "$HDS_PROJECT_DIR/mopshub_readout_lib/sim"
 )
 (vvPair
 variable "library_downstream_SvAssistantInvoke"
-value "$HDS_PROJECT_DIR/mopshub_lib/svassistant"
+value "$HDS_PROJECT_DIR/mopshub_readout_lib/svassistant"
 )
 (vvPair
 variable "mm"
-value "03"
+value "04"
 )
 (vvPair
 variable "module_name"
-value "mopshub_measurement_board"
+value "mopshub_readout"
 )
 (vvPair
 variable "month"
-value "Mar"
+value "Apr"
 )
 (vvPair
 variable "month_long"
-value "March"
+value "April"
 )
 (vvPair
 variable "p"
-value "/../../home/dcs/git/mopshub/mopshub_lib/hds/mopshub_measurement_board/symbol.sb"
+value "/../../home/dcs/git/mopshub_readout/mopshub_readout_lib/hds/mopshub_readout/symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "/../../home/dcs/git/mopshub/mopshub_lib/hds/mopshub_measurement_board/symbol.sb"
+value "/../../home/dcs/git/mopshub_readout/mopshub_readout_lib/hds/mopshub_readout/symbol.sb"
 )
 (vvPair
 variable "package_name"
@@ -1461,7 +1461,7 @@ value "<Undefined Variable>"
 )
 (vvPair
 variable "project_name"
-value "mopshub"
+value "mopshub_readout"
 )
 (vvPair
 variable "series"
@@ -1509,11 +1509,11 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "10:49:33"
+value "13:09:39"
 )
 (vvPair
 variable "unit"
-value "mopshub_measurement_board"
+value "mopshub_readout"
 )
 (vvPair
 variable "user"
@@ -3972,8 +3972,8 @@ uid 11,0
 va (VaSet
 font "courier,8,1"
 )
-xt "24750,15100,30750,16000"
-st "mopshub_lib"
+xt "24750,15100,34750,16000"
+st "mopshub_readout_lib"
 blo "24750,15800"
 )
 second (Text
@@ -3981,8 +3981,8 @@ uid 12,0
 va (VaSet
 font "courier,8,1"
 )
-xt "24750,16000,37750,16900"
-st "mopshub_measurement_board"
+xt "24750,16000,32750,16900"
+st "mopshub_readout"
 blo "24750,16700"
 )
 )
@@ -4324,7 +4324,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "32200,49050,40700,49950"
+xt "32200,49050,42700,49950"
 st "
 %library/%unit/%view
 "
@@ -4661,7 +4661,7 @@ xt "2000,2700,2000,2700"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 2696,0
+lastUid 2718,0
 postModuleDirective "// Local declarations
 
 // Internal signal declarations"
