@@ -1,15 +1,6 @@
 ############################################################
 # Physical Constraints                                     #
 ############################################################
-#Rx CAN signals
-set_property PACKAGE_PIN B21 [get_ports rx0_0]
-set_property IOSTANDARD LVCMOS33 [get_ports rx0_0]
-
-#Tx CAN signals
-set_property PACKAGE_PIN A20 [get_ports tx0_0]
-set_property IOSTANDARD LVCMOS33 [get_ports tx0_0]
-
-
 ## DBG Signals
 #GPIO_LED_0 [DS38.2]
 set_property PACKAGE_PIN AG14 [get_ports rx_data_rdy_0]
@@ -36,17 +27,6 @@ set_property IOSTANDARD LVCMOS33 [get_ports irq_elink_tra_0]
 set_property IOSTANDARD LVCMOS33 [get_ports irq_can_rec_0]
 set_property IOSTANDARD LVCMOS33 [get_ports irq_can_tra_0]
 set_property IOSTANDARD LVCMOS33 [get_ports rx_data_rdy_0]
-#GPIO_SW_N (SW18.3)
-set_property package_pin AG15 [get_ports endwait_all_0]
-#GPIO_SW_C (SW15.3)
-set_property PACKAGE_PIN AG13 [get_ports osc_auto_trim_mopshub_0]
-#GPIO_SW_E (SW17.3)
-set_property PACKAGE_PIN AE14 [get_ports dbg_elink_0]
-
-set_property IOSTANDARD LVCMOS33 [get_ports osc_auto_trim_mopshub_0]
-set_property IOSTANDARD LVCMOS33 [get_ports endwait_all_0]
-set_property IOSTANDARD LVCMOS33 [get_ports dbg_elink_0]
-
 #set_property IOSTANDARD LVCMOS33 [get_ports seialize_data_stream_0]
 #set_property PACKAGE_PIN AF15 [get_ports seialize_data_stream_0]
 set_property PACKAGE_PIN AM13 [get_ports reset]
