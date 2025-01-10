@@ -1,0 +1,958 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May  3 17:21:56 2024
+# Process ID: 20060
+# Current directory: /home/dcs/git/mopshub_readout/Vivado/mopshub_readout/mopshub_readout/mopshub_readout.runs/mopshub_readout_bd_mopshub_readout_0_0_synth_1
+# Command line: vivado -log mopshub_readout_bd_mopshub_readout_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mopshub_readout_bd_mopshub_readout_0_0.tcl
+# Log file: /home/dcs/git/mopshub_readout/Vivado/mopshub_readout/mopshub_readout/mopshub_readout.runs/mopshub_readout_bd_mopshub_readout_0_0_synth_1/mopshub_readout_bd_mopshub_readout_0_0.vds
+# Journal file: /home/dcs/git/mopshub_readout/Vivado/mopshub_readout/mopshub_readout/mopshub_readout.runs/mopshub_readout_bd_mopshub_readout_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source mopshub_readout_bd_mopshub_readout_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/dcs/git/mopshub_readout/Vivado/mopshub_readout/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/storage/sw/Xilinx/Vivado/2020.2/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 2448.191 ; gain = 0.000 ; free physical = 9855 ; free virtual = 17190
+Command: synth_design -top mopshub_readout_bd_mopshub_readout_0_0 -part xczu9eg-ffvb1156-2-e -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-5178] IP tri_mode_ethernet_mac_0 will not be generated with lower license level. If you would like to generate with the current available license levels, please reset and regenerate.
+WARNING: [IP_Flow 19-3571] IP 'mopshub_readout_bd_mopshub_readout_0_0' is restricted:
+* Module reference is stale and needs refreshing.
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-1540] The version limit for your license is '2021.01' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20695
+WARNING: [Synth 8-2507] parameter declaration becomes local in debug_uart_receiver with formal parameter declaration list [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/debug_uart_receiver.v:34]
+WARNING: [Synth 8-2507] parameter declaration becomes local in debug_uart_receiver with formal parameter declaration list [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/debug_uart_receiver.v:35]
+WARNING: [Synth 8-2507] parameter declaration becomes local in debug_uart_receiver with formal parameter declaration list [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/debug_uart_receiver.v:36]
+WARNING: [Synth 8-2507] parameter declaration becomes local in debug_uart_receiver with formal parameter declaration list [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/debug_uart_receiver.v:37]
+WARNING: [Synth 8-2507] parameter declaration becomes local in debug_uart_receiver with formal parameter declaration list [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/debug_uart_receiver.v:38]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 2877.586 ; gain = 36.820 ; free physical = 8305 ; free virtual = 15779
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mopshub_readout_bd_mopshub_readout_0_0' [/home/dcs/git/mopshub_readout/Vivado/mopshub_readout/mopshub_readout/mopshub_readout.gen/sources_1/bd/mopshub_readout_bd/ip/mopshub_readout_bd_mopshub_readout_0_0/synth/mopshub_readout_bd_mopshub_readout_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'mopshub_readout' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/mopshub_readout_struct.v:13]
+INFO: [Synth 8-6157] synthesizing module 'counter_enable' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/counter_enable.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'counter_enable' (1#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/counter_enable.v:13]
+INFO: [Synth 8-6157] synthesizing module 'debug_uart_core' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/debug_uart_core_struct.v:13]
+	Parameter CLKS_PER_BIT bound to: 100 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'debug_uart_receiver' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/debug_uart_receiver.v:25]
+	Parameter CLKS_PER_BIT bound to: 100 - type: integer 
+	Parameter s_IDLE bound to: 3'b000 
+	Parameter s_RX_START_BIT bound to: 3'b001 
+	Parameter s_RX_DATA_BITS bound to: 3'b010 
+	Parameter s_RX_STOP_BIT bound to: 3'b011 
+	Parameter s_CLEANUP bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'debug_uart_receiver' (2#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/debug_uart_receiver.v:25]
+INFO: [Synth 8-6157] synthesizing module 'debug_uart_sm' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/debug_uart_sm_fsm.v:12]
+	Parameter ST_IDLE bound to: 3'b000 
+	Parameter ST_SEL_SM bound to: 3'b001 
+	Parameter ST_write_fifo bound to: 3'b010 
+	Parameter ST_read_fifo bound to: 3'b011 
+	Parameter ST_write_uart bound to: 3'b100 
+	Parameter ST_write_done bound to: 3'b101 
+	Parameter ST_wait bound to: 3'b110 
+	Parameter ST_rst_uart bound to: 3'b111 
+INFO: [Synth 8-226] default block is never used [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/debug_uart_sm_fsm.v:66]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/debug_uart_sm_fsm.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'debug_uart_sm' (3#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/debug_uart_sm_fsm.v:12]
+INFO: [Synth 8-6157] synthesizing module 'debug_uart_transmitter' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/debug_uart_transmitter.v:30]
+	Parameter CLKS_PER_BIT bound to: 100 - type: integer 
+	Parameter s_IDLE bound to: 3'b000 
+	Parameter s_TX_START_BIT bound to: 3'b001 
+	Parameter s_TX_DATA_BITS bound to: 3'b010 
+	Parameter s_TX_STOP_BIT bound to: 3'b011 
+	Parameter s_CLEANUP bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'debug_uart_transmitter' (4#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/debug_uart_transmitter.v:30]
+INFO: [Synth 8-6157] synthesizing module 'fifo_async' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/fifo_async.v:7]
+	Parameter DSIZE bound to: 8 - type: integer 
+	Parameter ASIZE bound to: 15 - type: integer 
+	Parameter FALLTHROUGH bound to: False - type: string 
+INFO: [Synth 8-6157] synthesizing module 'fifo_sync_r2w' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/fifo_sync_r2w.v:7]
+	Parameter ASIZE bound to: 15 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_sync_r2w' (5#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/fifo_sync_r2w.v:7]
+INFO: [Synth 8-6157] synthesizing module 'fifo_sync_w2r' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/fifo_sync_w2r.v:7]
+	Parameter ASIZE bound to: 15 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_sync_w2r' (6#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/fifo_sync_w2r.v:7]
+INFO: [Synth 8-6157] synthesizing module 'fifo_wptr_full' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/fifo_wptr_full.v:7]
+	Parameter ADDRSIZE bound to: 15 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_wptr_full' (7#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/fifo_wptr_full.v:7]
+INFO: [Synth 8-6157] synthesizing module 'fifo_mem' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/fifo_mem.v:7]
+	Parameter DATASIZE bound to: 8 - type: integer 
+	Parameter ADDRSIZE bound to: 15 - type: integer 
+	Parameter FALLTHROUGH bound to: False - type: string 
+	Parameter DEPTH bound to: 32768 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_mem' (8#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/fifo_mem.v:7]
+INFO: [Synth 8-6157] synthesizing module 'fifo_rptr_empty' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/fifo_rptr_empty.v:7]
+	Parameter ADDRSIZE bound to: 15 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_rptr_empty' (9#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/fifo_rptr_empty.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_async' (10#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/fifo_async.v:7]
+INFO: [Synth 8-6157] synthesizing module 'mux8_1_8bit' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/mux8_1_8bit.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'mux8_1_8bit' (11#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/mux8_1_8bit.v:13]
+INFO: [Synth 8-6157] synthesizing module 'timeout_rst_module' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/timeoutrst_module.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'timeout_rst_module' (12#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/timeoutrst_module.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'debug_uart_core' (13#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/debug_uart_core_struct.v:13]
+INFO: [Synth 8-6157] synthesizing module 'elink_core' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/elink_core_struct.v:13]
+INFO: [Synth 8-6157] synthesizing module 'buffer_rec_elink' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/rec_elink_buf.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'buffer_rec_elink' (14#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/rec_elink_buf.v:14]
+INFO: [Synth 8-6157] synthesizing module 'buffer_tra_elink' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/tra_elink_buf.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'buffer_tra_elink' (15#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/tra_elink_buf.v:13]
+INFO: [Synth 8-6157] synthesizing module 'elink_receiver' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/elink_receiver_struct.v:13]
+INFO: [Synth 8-6157] synthesizing module 'elink_proc_in_dec8b10b' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/elink_proc_in_dec8b10b_struct.v:13]
+INFO: [Synth 8-6157] synthesizing module 'bitstream_shift_register' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/bitstream_shift_register.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'bitstream_shift_register' (16#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/bitstream_shift_register.v:16]
+INFO: [Synth 8-6157] synthesizing module 'dec_8b10b_mopshub' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/dec_8b10b_mopshub.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'dec_8b10b_mopshub' (17#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/dec_8b10b_mopshub.v:15]
+INFO: [Synth 8-6157] synthesizing module 'sync_detector' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/sync_detector_struct.v:13]
+INFO: [Synth 8-226] default block is never used [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/sync_detector_struct.v:157]
+INFO: [Synth 8-6155] done synthesizing module 'sync_detector' (18#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/sync_detector_struct.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'elink_proc_in_dec8b10b' (19#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/elink_proc_in_dec8b10b_struct.v:13]
+INFO: [Synth 8-6157] synthesizing module 'fifo_core_wrapper' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/fifo_core_wrapper_struct.v:13]
+INFO: [Synth 8-6157] synthesizing module 'fifo_async__parameterized0' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/fifo_async.v:7]
+	Parameter DSIZE bound to: 10 - type: integer 
+	Parameter ASIZE bound to: 18 - type: integer 
+	Parameter FALLTHROUGH bound to: False - type: string 
+INFO: [Synth 8-6157] synthesizing module 'fifo_sync_r2w__parameterized0' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/fifo_sync_r2w.v:7]
+	Parameter ASIZE bound to: 18 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_sync_r2w__parameterized0' (19#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/fifo_sync_r2w.v:7]
+INFO: [Synth 8-6157] synthesizing module 'fifo_sync_w2r__parameterized0' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/fifo_sync_w2r.v:7]
+	Parameter ASIZE bound to: 18 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_sync_w2r__parameterized0' (19#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/fifo_sync_w2r.v:7]
+INFO: [Synth 8-6157] synthesizing module 'fifo_wptr_full__parameterized0' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/fifo_wptr_full.v:7]
+	Parameter ADDRSIZE bound to: 18 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_wptr_full__parameterized0' (19#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/fifo_wptr_full.v:7]
+INFO: [Synth 8-6157] synthesizing module 'fifo_mem__parameterized0' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/fifo_mem.v:7]
+	Parameter DATASIZE bound to: 10 - type: integer 
+	Parameter ADDRSIZE bound to: 18 - type: integer 
+	Parameter FALLTHROUGH bound to: False - type: string 
+	Parameter DEPTH bound to: 262144 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_mem__parameterized0' (19#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/fifo_mem.v:7]
+INFO: [Synth 8-6157] synthesizing module 'fifo_rptr_empty__parameterized0' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/fifo_rptr_empty.v:7]
+	Parameter ADDRSIZE bound to: 18 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_rptr_empty__parameterized0' (19#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/fifo_rptr_empty.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_async__parameterized0' (19#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/fifo_async.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_core_wrapper' (20#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/fifo_core_wrapper_struct.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'elink_receiver' (21#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/elink_receiver_struct.v:13]
+INFO: [Synth 8-6157] synthesizing module 'buffer_tristate_elink' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/buffer_tristate_elink.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'buffer_tristate_elink' (22#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/buffer_tristate_elink.v:3]
+INFO: [Synth 8-6157] synthesizing module 'elink_interface_rec_sm' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/elink_interface_rec_sm_fsm.v:12]
+	Parameter ST_waittoact bound to: 5'b00000 
+	Parameter ST_reset bound to: 5'b00001 
+	Parameter store_RB2 bound to: 5'b00010 
+	Parameter store_RB3 bound to: 5'b00011 
+	Parameter store_RB4 bound to: 5'b00100 
+	Parameter store_RB0 bound to: 5'b00101 
+	Parameter RB1 bound to: 5'b00110 
+	Parameter store_RB5 bound to: 5'b00111 
+	Parameter store_RB6 bound to: 5'b01000 
+	Parameter store_RB7 bound to: 5'b01001 
+	Parameter store_RB8 bound to: 5'b01010 
+	Parameter store_RB9 bound to: 5'b01011 
+	Parameter ST_wait_eop bound to: 5'b01100 
+	Parameter ST_end_read_en bound to: 5'b01101 
+	Parameter ST_Wait bound to: 5'b01110 
+	Parameter ST_en_buffer bound to: 5'b01111 
+	Parameter ST_wait_sop bound to: 5'b10000 
+	Parameter RB0 bound to: 5'b10001 
+	Parameter ST_eth_buffer bound to: 5'b10010 
+	Parameter wait_irq bound to: 5'b10011 
+	Parameter irq_eth bound to: 5'b10100 
+	Parameter ST_endwait bound to: 5'b10101 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/elink_interface_rec_sm_fsm.v:229]
+INFO: [Synth 8-6155] done synthesizing module 'elink_interface_rec_sm' (23#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/elink_interface_rec_sm_fsm.v:12]
+INFO: [Synth 8-6157] synthesizing module 'elink_interface_tra_sm' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/elink_interface_tra_sm_fsm.v:12]
+	Parameter ST_waittoact bound to: 5'b00000 
+	Parameter ST_reset bound to: 5'b00001 
+	Parameter ST_end_write_en_DBG bound to: 5'b00010 
+	Parameter store_WB0_DBG bound to: 5'b00011 
+	Parameter ST_wait_can_rq_DBG bound to: 5'b00100 
+	Parameter st_write_data_DBG bound to: 5'b00101 
+	Parameter store_SOP_DBG bound to: 5'b00110 
+	Parameter Store_Eop_DBG bound to: 5'b00111 
+	Parameter WB0_DBG bound to: 5'b01000 
+	Parameter W_SOP_DBG bound to: 5'b01001 
+	Parameter W_Eop_DBG bound to: 5'b01010 
+	Parameter Store_Comma_DBG bound to: 5'b01011 
+	Parameter store_WB0_rst bound to: 5'b01100 
+	Parameter store_SOP_rst bound to: 5'b01101 
+	Parameter store_Eop_rst bound to: 5'b01110 
+	Parameter WB0_rst bound to: 5'b01111 
+	Parameter W_SOP_rst bound to: 5'b10000 
+	Parameter W_Eop_rst bound to: 5'b10001 
+	Parameter ST_endwait bound to: 5'b10010 
+	Parameter W_Comma_DBG bound to: 5'b10011 
+	Parameter end_Write_rst bound to: 5'b10100 
+	Parameter ST_wait_rq_rst bound to: 5'b10101 
+	Parameter W_Comma_rst1 bound to: 5'b10110 
+	Parameter store_Comma_rst bound to: 5'b10111 
+	Parameter store_Comma_rst3 bound to: 5'b11000 
+	Parameter W_Comma_rst4 bound to: 5'b11001 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/elink_interface_tra_sm_fsm.v:234]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/elink_interface_tra_sm_fsm.v:355]
+INFO: [Synth 8-6155] done synthesizing module 'elink_interface_tra_sm' (24#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/elink_interface_tra_sm_fsm.v:12]
+INFO: [Synth 8-6157] synthesizing module 'elink_transmitter' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/elink_transmitter_struct.v:13]
+INFO: [Synth 8-6157] synthesizing module 'elink_proc_out_enc8b10b' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/elink_proc_out_enc8b10b_struct.v:14]
+INFO: [Synth 8-6157] synthesizing module 'counter_trigger' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/counter_trigger.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'counter_trigger' (25#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/counter_trigger.v:13]
+INFO: [Synth 8-6157] synthesizing module 'enc_8b10b_mopshub' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/enc_8b10b_mopshub.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'enc_8b10b_mopshub' (26#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/enc_8b10b_mopshub.v:15]
+INFO: [Synth 8-6157] synthesizing module 'mux8_Nbit' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/mux8_Nbit.v:13]
+INFO: [Synth 8-226] default block is never used [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/mux8_Nbit.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'mux8_Nbit' (27#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/mux8_Nbit.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'elink_proc_out_enc8b10b' (28#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/elink_proc_out_enc8b10b_struct.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'elink_transmitter' (29#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/elink_transmitter_struct.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'elink_core' (30#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/elink_core_struct.v:13]
+INFO: [Synth 8-6157] synthesizing module 'ethernet_core' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/ethernet_core_struct.v:13]
+INFO: [Synth 8-638] synthesizing module 'ethernet_emac_wrapper' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/ethernet_emac_wrapper_entity.vhd:41]
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0' declared at '/home/dcs/git/mopshub_readout/Vivado/mopshub_readout/ip_repo/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0.v:67' bound to instance 'mac' of component 'tri_mode_ethernet_mac_0' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/ethernet_emac_wrapper_entity.vhd:89]
+INFO: [Synth 8-6157] synthesizing module 'tri_mode_ethernet_mac_0' [/home/dcs/git/mopshub_readout/Vivado/mopshub_readout/ip_repo/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0.v:67]
+INFO: [Synth 8-6157] synthesizing module 'tri_mode_ethernet_mac_0_block' [/home/dcs/git/mopshub_readout/Vivado/mopshub_readout/ip_repo/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_block.v:89]
+INFO: [Synth 8-6157] synthesizing module 'LUT4' [/mnt/storage/sw/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39251]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4' (39#1) [/mnt/storage/sw/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39251]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized0' [/mnt/storage/sw/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39251]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized0' (39#1) [/mnt/storage/sw/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39251]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized1' [/mnt/storage/sw/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39251]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized1' (39#1) [/mnt/storage/sw/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39251]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized2' [/mnt/storage/sw/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39251]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized2' (39#1) [/mnt/storage/sw/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39251]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized3' [/mnt/storage/sw/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39251]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized3' (39#1) [/mnt/storage/sw/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39251]
+INFO: [Synth 8-6157] synthesizing module 'RAM64X1D' [/mnt/storage/sw/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:70577]
+INFO: [Synth 8-6155] done synthesizing module 'RAM64X1D' (52#1) [/mnt/storage/sw/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:70577]
+INFO: [Synth 8-6157] synthesizing module 'LUT3' [/mnt/storage/sw/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39209]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3' (53#1) [/mnt/storage/sw/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39209]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized0' [/mnt/storage/sw/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39209]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized0' (53#1) [/mnt/storage/sw/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39209]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized1' [/mnt/storage/sw/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39209]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized1' (53#1) [/mnt/storage/sw/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39209]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized2' [/mnt/storage/sw/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39209]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized2' (53#1) [/mnt/storage/sw/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39209]
+INFO: [Synth 8-6157] synthesizing module 'SRL16E' [/mnt/storage/sw/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78034]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (54#1) [/mnt/storage/sw/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78034]
+INFO: [Synth 8-6155] done synthesizing module 'tri_mode_ethernet_mac_0_block' (58#1) [/home/dcs/git/mopshub_readout/Vivado/mopshub_readout/ip_repo/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_block.v:89]
+INFO: [Synth 8-6155] done synthesizing module 'tri_mode_ethernet_mac_0' (59#1) [/home/dcs/git/mopshub_readout/Vivado/mopshub_readout/ip_repo/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0.v:67]
+INFO: [Synth 8-256] done synthesizing module 'ethernet_emac_wrapper' (60#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/ethernet_emac_wrapper_entity.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'ethernet_ipbus' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/ethernet_ipbus_entity.vhd:72]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'ibuf' to cell 'IBUFDS' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/ethernet_ipbus_entity.vhd:84]
+INFO: [Synth 8-113] binding component instance 'BUFG_inst' to cell 'BUFG' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/ethernet_ipbus_entity.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'clocks_us_serdes' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_util/firmware/hdl/clocks/clocks_us_serdes.vhd:67]
+	Parameter CLK_FR_FREQ bound to: 125.000000 - type: double 
+	Parameter CLK_VCO_FREQ bound to: 1000.000000 - type: double 
+	Parameter CLK_AUX_FREQ bound to: 40.000000 - type: double 
+INFO: [Synth 8-113] binding component instance 'bufgipb' to cell 'BUFG' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_util/firmware/hdl/clocks/clocks_us_serdes.vhd:80]
+INFO: [Synth 8-113] binding component instance 'bufgaux' to cell 'BUFG' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_util/firmware/hdl/clocks/clocks_us_serdes.vhd:87]
+INFO: [Synth 8-113] binding component instance 'bufg200' to cell 'BUFG' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_util/firmware/hdl/clocks/clocks_us_serdes.vhd:94]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 8.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKIN1_PERIOD bound to: 8.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 1.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_DIVIDE bound to: 32 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_DIVIDE bound to: 25 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_DIVIDE bound to: 5 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: double 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKFBIN_INVERTED bound to: 1'b0 
+	Parameter IS_CLKIN1_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-113] binding component instance 'mmcm' to cell 'MMCME3_BASE' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_util/firmware/hdl/clocks/clocks_us_serdes.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'ipbus_clock_div' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_util/firmware/hdl/ipbus_clock_div.vhd:51]
+	Parameter INIT bound to: 16'b0000000000000000 
+INFO: [Synth 8-113] binding component instance 'reset_gen' to cell 'SRL16' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_util/firmware/hdl/ipbus_clock_div.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'ipbus_clock_div' (61#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_util/firmware/hdl/ipbus_clock_div.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'clocks_us_serdes' (62#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_util/firmware/hdl/clocks/clocks_us_serdes.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'led_stretcher' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_util/firmware/hdl/led_stretcher.vhd:51]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'led_stretcher' (63#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_util/firmware/hdl/led_stretcher.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'ipbus_ctrl' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_util/firmware/hdl/masters/ipbus_ctrl.vhd:95]
+	Parameter MAC_CFG bound to: 1'b0 
+	Parameter IP_CFG bound to: 1'b0 
+	Parameter BUFWIDTH bound to: 4 - type: integer 
+	Parameter INTERNALWIDTH bound to: 1 - type: integer 
+	Parameter ADDRWIDTH bound to: 11 - type: integer 
+	Parameter SECONDARYPORT bound to: 1'b0 
+	Parameter DHCP_RARP bound to: 1'b0 
+	Parameter N_OOB bound to: 0 - type: integer 
+WARNING: [Synth 8-506] null port 'oob_in' ignored [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_util/firmware/hdl/masters/ipbus_ctrl.vhd:89]
+WARNING: [Synth 8-506] null port 'oob_out' ignored [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_util/firmware/hdl/masters/ipbus_ctrl.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'UDP_if' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_if_flat.vhd:93]
+	Parameter BUFWIDTH bound to: 4 - type: integer 
+	Parameter INTERNALWIDTH bound to: 1 - type: integer 
+	Parameter ADDRWIDTH bound to: 11 - type: integer 
+	Parameter SECONDARYPORT bound to: 1'b0 
+	Parameter DHCP_RARP bound to: 1'b0 
+INFO: [Synth 8-638] synthesizing module 'udp_ipam_block' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_ipam_block.vhd:60]
+	Parameter DHCP_RARP bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'udp_ipam_block' (64#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_ipam_block.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'udp_build_arp' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_build_arp.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'udp_build_arp' (65#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_build_arp.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'udp_build_ping' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_build_ping.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'udp_build_ping' (66#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_build_ping.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'udp_ipaddr_ipam' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_ipaddr_ipam.vhd:62]
+	Parameter DHCP_RARP bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'udp_ipaddr_ipam' (67#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_ipaddr_ipam.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'udp_build_payload' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_build_payload.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'udp_build_payload' (68#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_build_payload.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'udp_build_resend' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_build_resend.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'udp_build_resend' (69#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_build_resend.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'udp_build_status' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_build_status.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'udp_build_status' (70#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_build_status.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'udp_status_buffer' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_status_buffer.vhd:75]
+	Parameter BUFWIDTH bound to: 4 - type: integer 
+	Parameter ADDRWIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'udp_status_buffer' (71#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_status_buffer.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'udp_byte_sum' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_byte_sum.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'udp_byte_sum' (72#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_byte_sum.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'udp_do_rx_reset' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_do_rx_reset.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'udp_do_rx_reset' (73#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_do_rx_reset.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'udp_packet_parser' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_packet_parser.vhd:64]
+	Parameter SECONDARYPORT bound to: 1'b0 
+	Parameter DHCP_RARP bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'udp_packet_parser' (74#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_packet_parser.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'udp_rxram_mux' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_rxram_mux.vhd:82]
+INFO: [Synth 8-256] done synthesizing module 'udp_rxram_mux' (75#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_rxram_mux.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'udp_DualPortRAM' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_dualportram.vhd:48]
+	Parameter BUFWIDTH bound to: 1 - type: integer 
+	Parameter ADDRWIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'udp_DualPortRAM' (76#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_dualportram.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'udp_buffer_selector' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_buffer_selector.vhd:58]
+	Parameter BUFWIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'udp_buffer_selector' (77#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_buffer_selector.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'udp_rxram_shim' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_rxram_shim.vhd:56]
+	Parameter BUFWIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'udp_rxram_shim' (78#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_rxram_shim.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'udp_DualPortRAM_rx' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_dualportram_rx.vhd:48]
+	Parameter BUFWIDTH bound to: 4 - type: integer 
+	Parameter ADDRWIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_dualportram_rx.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'udp_DualPortRAM_rx' (79#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_dualportram_rx.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'udp_buffer_selector__parameterized0' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_buffer_selector.vhd:58]
+	Parameter BUFWIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'udp_buffer_selector__parameterized0' (79#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_buffer_selector.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'udp_rxtransactor_if' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_rxtransactor_if_simple.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'udp_rxtransactor_if' (80#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_rxtransactor_if_simple.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'udp_DualPortRAM_tx' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_dualportram_tx.vhd:48]
+	Parameter BUFWIDTH bound to: 4 - type: integer 
+	Parameter ADDRWIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_dualportram_tx.vhd:83]
+INFO: [Synth 8-256] done synthesizing module 'udp_DualPortRAM_tx' (81#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_dualportram_tx.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'udp_tx_mux' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_tx_mux.vhd:78]
+	Parameter INTERNAL_ONLY bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'udp_tx_mux' (82#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_tx_mux.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'udp_txtransactor_if' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_txtransactor_if_simple.vhd:61]
+	Parameter BUFWIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'udp_txtransactor_if' (83#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_txtransactor_if_simple.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'udp_clock_crossing_if' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_clock_crossing_if.vhd:69]
+	Parameter BUFWIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'udp_clock_crossing_if' (84#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_clock_crossing_if.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'UDP_if' (85#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_transport_udp/firmware/hdl/udp_if_flat.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'transactor' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_core/firmware/hdl/transactor.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'transactor_if' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_core/firmware/hdl/transactor_if.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'transactor_if' (86#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_core/firmware/hdl/transactor_if.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'transactor_sm' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_core/firmware/hdl/transactor_sm.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'transactor_sm' (87#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_core/firmware/hdl/transactor_sm.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'transactor_cfg' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_core/firmware/hdl/transactor_cfg.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'transactor_cfg' (88#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_core/firmware/hdl/transactor_cfg.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'transactor' (89#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_core/firmware/hdl/transactor.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'ipbus_ctrl' (90#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_util/firmware/hdl/masters/ipbus_ctrl.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'ethernet_payload' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/ethernet_payload_entity.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'ipbus_fabric_sel' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_core/firmware/hdl/ipbus_fabric_sel.vhd:59]
+	Parameter NSLV bound to: 3 - type: integer 
+	Parameter STROBE_GAP bound to: 0 - type: bool 
+	Parameter SEL_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ipbus_fabric_sel' (91#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_core/firmware/hdl/ipbus_fabric_sel.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'ipbus_ctrlreg_v' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_slaves/firmware/hdl/ipbus_ctrlreg_v.vhd:68]
+	Parameter N_CTRL bound to: 1 - type: integer 
+	Parameter N_STAT bound to: 1 - type: integer 
+	Parameter SWAP_ORDER bound to: 0 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'ipbus_ctrlreg_v' (92#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_slaves/firmware/hdl/ipbus_ctrlreg_v.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'ipbus_reg_v' [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_slaves/firmware/hdl/ipbus_reg_v.vhd:55]
+	Parameter N_REG bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ipbus_reg_v' (93#1) [/home/dcs/git/mopshub_readout/ipbus-firmware/components/ipbus_slaves/firmware/hdl/ipbus_reg_v.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'ethernet_SM' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/ethernet_SM_entity.vhd:26]
+	Parameter N_REG bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ethernet_SM' (94#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/ethernet_SM_entity.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'ethernet_payload' (95#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/ethernet_payload_entity.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'ethernet_ipbus' (96#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/ethernet_ipbus_entity.vhd:72]
+INFO: [Synth 8-6157] synthesizing module 'fifo_async__parameterized1' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/fifo_async.v:7]
+	Parameter DSIZE bound to: 76 - type: integer 
+	Parameter ASIZE bound to: 15 - type: integer 
+	Parameter FALLTHROUGH bound to: False - type: string 
+INFO: [Synth 8-6157] synthesizing module 'fifo_mem__parameterized1' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/fifo_mem.v:7]
+	Parameter DATASIZE bound to: 76 - type: integer 
+	Parameter ADDRSIZE bound to: 15 - type: integer 
+	Parameter FALLTHROUGH bound to: False - type: string 
+	Parameter DEPTH bound to: 32768 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_mem__parameterized1' (96#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/fifo_mem.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_async__parameterized1' (96#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/fifo_async.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'ethernet_core' (97#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/ethernet_core_struct.v:13]
+INFO: [Synth 8-6157] synthesizing module 'ip_output_diff_clk_mopshub_debug' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/ip_output_diff_clk_mopshub_debug.v:13]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [/mnt/storage/sw/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:46332]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (98#1) [/mnt/storage/sw/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:46332]
+INFO: [Synth 8-6155] done synthesizing module 'ip_output_diff_clk_mopshub_debug' (99#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/ip_output_diff_clk_mopshub_debug.v:13]
+INFO: [Synth 8-6157] synthesizing module 'ip_select_io_ddr_wrapper' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/ip_select_io_ddr_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'IDDRE1' [/mnt/storage/sw/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:34990]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter IS_CB_INVERTED bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'IDDRE1' (100#1) [/mnt/storage/sw/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:34990]
+INFO: [Synth 8-6157] synthesizing module 'ODDRE1' [/mnt/storage/sw/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:49842]
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SIM_DEVICE bound to: ULTRASCALE_PLUS - type: string 
+	Parameter SRVAL bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'ODDRE1' (101#1) [/mnt/storage/sw/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:49842]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [/mnt/storage/sw/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32998]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (102#1) [/mnt/storage/sw/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32998]
+INFO: [Synth 8-6155] done synthesizing module 'ip_select_io_ddr_wrapper' (103#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/ip_select_io_ddr_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'timeout_rst_watchdog' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/timeout_rst_watchdog.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'timeout_rst_watchdog' (104#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/timeout_rst_watchdog.v:3]
+INFO: [Synth 8-6157] synthesizing module 'top_led_enable_sm' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/top_led_enable_sm_fsm.v:12]
+	Parameter ST_RESET bound to: 2'b00 
+	Parameter ST_WAIT_0 bound to: 2'b01 
+	Parameter ST_WAIT_1 bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/top_led_enable_sm_fsm.v:98]
+INFO: [Synth 8-6155] done synthesizing module 'top_led_enable_sm' (105#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/top_led_enable_sm_fsm.v:12]
+INFO: [Synth 8-6157] synthesizing module 'top_led_for_synth' [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/top_led_for_synth_struct.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'top_led_for_synth' (106#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/top_led_for_synth_struct.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'mopshub_readout' (107#1) [/home/dcs/git/mopshub_readout/mopshub_readout_lib/hdl/mopshub_readout_struct.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'mopshub_readout_bd_mopshub_readout_0_0' (108#1) [/home/dcs/git/mopshub_readout/Vivado/mopshub_readout/mopshub_readout/mopshub_readout.gen/sources_1/bd/mopshub_readout_bd/ip/mopshub_readout_bd_mopshub_readout_0_0/synth/mopshub_readout_bd_mopshub_readout_0_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 3049.461 ; gain = 208.695 ; free physical = 8232 ; free virtual = 15716
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 3049.461 ; gain = 208.695 ; free physical = 8281 ; free virtual = 15760
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 3049.461 ; gain = 208.695 ; free physical = 8281 ; free virtual = 15760
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.14 . Memory (MB): peak = 3063.395 ; gain = 0.000 ; free physical = 8328 ; free virtual = 15785
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/dcs/git/mopshub_readout/Vivado/mopshub_readout/ip_repo/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_board.xdc] for cell 'inst/ethernet_core0/ethernet_emac_wrapper0/mac/inst'
+Finished Parsing XDC File [/home/dcs/git/mopshub_readout/Vivado/mopshub_readout/ip_repo/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_board.xdc] for cell 'inst/ethernet_core0/ethernet_emac_wrapper0/mac/inst'
+Parsing XDC File [/home/dcs/git/mopshub_readout/Vivado/mopshub_readout/ip_repo/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0.xdc] for cell 'inst/ethernet_core0/ethernet_emac_wrapper0/mac/inst'
+Finished Parsing XDC File [/home/dcs/git/mopshub_readout/Vivado/mopshub_readout/ip_repo/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0.xdc] for cell 'inst/ethernet_core0/ethernet_emac_wrapper0/mac/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/dcs/git/mopshub_readout/Vivado/mopshub_readout/ip_repo/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mopshub_readout_bd_mopshub_readout_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mopshub_readout_bd_mopshub_readout_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/dcs/git/mopshub_readout/Vivado/mopshub_readout/mopshub_readout/mopshub_readout.runs/mopshub_readout_bd_mopshub_readout_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/dcs/git/mopshub_readout/Vivado/mopshub_readout/mopshub_readout/mopshub_readout.runs/mopshub_readout_bd_mopshub_readout_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/dcs/git/mopshub_readout/Vivado/mopshub_readout/mopshub_readout/mopshub_readout.runs/mopshub_readout_bd_mopshub_readout_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mopshub_readout_bd_mopshub_readout_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mopshub_readout_bd_mopshub_readout_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/dcs/git/mopshub_readout/Vivado/mopshub_readout/ip_repo/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc] for cell 'inst/ethernet_core0/ethernet_emac_wrapper0/mac/inst'
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports clk125]'. [/home/dcs/git/mopshub_readout/Vivado/mopshub_readout/ip_repo/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:5]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/dcs/git/mopshub_readout/Vivado/mopshub_readout/ip_repo/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:5]
+Finished Parsing XDC File [/home/dcs/git/mopshub_readout/Vivado/mopshub_readout/ip_repo/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc] for cell 'inst/ethernet_core0/ethernet_emac_wrapper0/mac/inst'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3562.227 ; gain = 0.000 ; free physical = 7909 ; free virtual = 15415
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 20 instances were transformed.
+  BUFG => BUFGCE: 4 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 2 instances
+  MMCME3_BASE => MMCME4_ADV: 1 instance 
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUF(x2)): 2 instances
+  ODDRE1 => OSERDESE3: 1 instance 
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 8 instances
+  SRL16 => SRL16E: 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.09 . Memory (MB): peak = 3565.191 ; gain = 2.965 ; free physical = 7909 ; free virtual = 15415
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:01:08 . Memory (MB): peak = 3565.191 ; gain = 724.426 ; free physical = 8018 ; free virtual = 15521
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu9eg-ffvb1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:01:08 . Memory (MB): peak = 3565.191 ; gain = 724.426 ; free physical = 8018 ; free virtual = 15521
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ethernet_core0/ethernet_emac_wrapper0/mac/inst. (constraint file  /home/dcs/git/mopshub_readout/Vivado/mopshub_readout/mopshub_readout/mopshub_readout.runs/mopshub_readout_bd_mopshub_readout_0_0_synth_1/dont_touch.xdc, line 11).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ethernet_core0/ethernet_emac_wrapper0/mac. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:01:08 . Memory (MB): peak = 3565.191 ; gain = 724.426 ; free physical = 8018 ; free virtual = 15521
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'debug_uart_sm'
+INFO: [Synth 8-802] inferred FSM for state register 'r_SM_Main_reg' in module 'debug_uart_transmitter'
+INFO: [Synth 8-802] inferred FSM for state register 'tx_state_reg' in module 'tri_mode_ethernet_mac_v9_0_17_tx_axi_intf'
+INFO: [Synth 8-802] inferred FSM for state register 'rx_state_reg' in module 'tri_mode_ethernet_mac_v9_0_17_rx_axi_intf'
+INFO: [Synth 8-802] inferred FSM for state register 'state_count_reg' in module 'tri_mode_ethernet_mac_v9_0_17_tx_cntl'
+INFO: [Synth 8-802] inferred FSM for state register 'pause_state_reg' in module 'tri_mode_ethernet_mac_v9_0_17_pfc_tx_cntl'
+INFO: [Synth 8-802] inferred FSM for state register 'legacy_state_reg' in module 'tri_mode_ethernet_mac_v9_0_17_pfc_tx_cntl'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'transactor_if'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'transactor_sm'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'top_led_enable_sm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_IDLE |                          0000001 |                              000
+               ST_SEL_SM |                          0000010 |                              001
+           ST_write_fifo |                          0000100 |                              010
+                 ST_wait |                          0001000 |                              110
+            ST_read_fifo |                          0010000 |                              011
+           ST_write_uart |                          0100000 |                              100
+           ST_write_done |                          1000000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'debug_uart_sm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_IDLE |                              000 |                              000
+          s_TX_START_BIT |                              001 |                              001
+          s_TX_DATA_BITS |                              010 |                              010
+           s_TX_STOP_BIT |                              011 |                              011
+               s_CLEANUP |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_SM_Main_reg' using encoding 'sequential' in module 'debug_uart_transmitter'
+INFO: [Synth 8-6159] Found Keep on FSM register 'tx_state_reg' in module 'tri_mode_ethernet_mac_v9_0_17_tx_axi_intf', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0000 |                             0000
+                   LOAD1 |                             0001 |                             0001
+                   LOAD2 |                             0010 |                             0010
+                    WAIT |                             0011 |                             0011
+                END_LOAD |                             0100 |                             0100
+              CLEAR_PIPE |                             0101 |                             0101
+                 RELOAD1 |                             0110 |                             0110
+                 RELOAD2 |                             0111 |                             0111
+                    SEND |                             1000 |                             1000
+                   BURST |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               01 |                               00
+                     PKT |                               11 |                               01
+                    WAIT |                               10 |                               10
+                    DONE |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_state_reg' using encoding 'sequential' in module 'tri_mode_ethernet_mac_v9_0_17_rx_axi_intf'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                              001 |                              001
+        TRANSMIT_REQUEST |                              010 |                              010
+            TRANSMITTING |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_count_reg' in module 'tri_mode_ethernet_mac_v9_0_17_tx_cntl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                              000
+                     REQ |                             1000 |                              001
+                    WAIT |                             0100 |                              010
+                   COUNT |                             0010 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'legacy_state_reg' using encoding 'one-hot' in module 'tri_mode_ethernet_mac_v9_0_17_pfc_tx_cntl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  P_IDLE |                               00 |                               00
+                   P_REQ |                               01 |                               01
+                  P_WAIT |                               10 |                               10
+                  P_HOLD |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pause_state_reg' using encoding 'sequential' in module 'tri_mode_ethernet_mac_v9_0_17_pfc_tx_cntl'
+INFO: [Synth 8-5779] Default cascade height of 1 will be used for BRAM '"udp_DualPortRAM:/ram_reg"'.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "udp_DualPortRAM:/ram_reg"
+INFO: [Synth 8-5779] Default cascade height of 2 will be used for BRAM '"udp_DualPortRAM_rx:/ram1_reg"'.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 8 for RAM "udp_DualPortRAM_rx:/ram1_reg"
+INFO: [Synth 8-5779] Default cascade height of 2 will be used for BRAM '"udp_DualPortRAM_rx:/ram2_reg"'.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 8 for RAM "udp_DualPortRAM_rx:/ram2_reg"
+INFO: [Synth 8-5779] Default cascade height of 2 will be used for BRAM '"udp_DualPortRAM_rx:/ram3_reg"'.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 8 for RAM "udp_DualPortRAM_rx:/ram3_reg"
+INFO: [Synth 8-5779] Default cascade height of 2 will be used for BRAM '"udp_DualPortRAM_rx:/ram4_reg"'.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 8 for RAM "udp_DualPortRAM_rx:/ram4_reg"
+INFO: [Synth 8-5779] Default cascade height of 4 will be used for BRAM '"udp_DualPortRAM_tx:/ram_reg"'.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 4 and width 18 for RAM "udp_DualPortRAM_tx:/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 9 for RAM "udp_DualPortRAM_tx:/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 4 for RAM "udp_DualPortRAM_tx:/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "udp_DualPortRAM_tx:/ram_reg"
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 st_idle |                          0000010 |                              000
+                st_first |                          1000000 |                              001
+                  st_hdr |                          0100000 |                              010
+              st_prebody |                          0010000 |                              011
+                 st_body |                          0001000 |                              100
+                 st_done |                          0000100 |                              101
+                  st_gap |                          0000001 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'transactor_if'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 st_idle |                           100000 |                              000
+                  st_hdr |                           001000 |                              001
+                 st_addr |                           010000 |                              010
+            st_bus_cycle |                           000010 |                              011
+                st_rmw_1 |                           000100 |                              100
+                st_rmw_2 |                           000001 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'transactor_sm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                ST_RESET |                               00 |                               00
+               ST_WAIT_0 |                               01 |                               01
+               ST_WAIT_1 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'top_led_enable_sm'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:01:14 . Memory (MB): peak = 3565.191 ; gain = 724.426 ; free physical = 8002 ; free virtual = 15508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2520 (col length:168)
+BRAMs: 1824 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5779] Default cascade height of 8 will be used for BRAM '"inst/debug_uart_core0/fifo_async1/fifomem/mem_reg"'.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/debug_uart_core0/fifo_async1/fifomem/mem_reg"
+INFO: [Synth 8-5779] Default cascade height of 8 will be used for BRAM '"inst/debug_uart_core0/fifo_async0/fifomem/mem_reg"'.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 8 for RAM "inst/debug_uart_core0/fifo_async0/fifomem/mem_reg"
+INFO: [Synth 8-5779] Default cascade height of 8 will be used for BRAM '"inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg"'.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 1 for RAM "inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg"
+INFO: [Synth 8-5779] Default cascade height of 8 will be used for BRAM '"inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg"'.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 1 for RAM "inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg"
+INFO: [Synth 8-5779] Default cascade height of 1 will be used for BRAM '"inst/ethernet_core0/\ethernet_ipbus0/ipbus/udp_if /internal_ram/ram_reg"'.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "inst/ethernet_core0/\ethernet_ipbus0/ipbus/udp_if /internal_ram/ram_reg"
+INFO: [Synth 8-5779] Default cascade height of 2 will be used for BRAM '"inst/ethernet_core0/\ethernet_ipbus0/ipbus/udp_if /ipbus_rx_ram/ram1_reg"'.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 8 for RAM "inst/ethernet_core0/\ethernet_ipbus0/ipbus/udp_if /ipbus_rx_ram/ram1_reg"
+INFO: [Synth 8-5779] Default cascade height of 2 will be used for BRAM '"inst/ethernet_core0/\ethernet_ipbus0/ipbus/udp_if /ipbus_rx_ram/ram2_reg"'.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 8 for RAM "inst/ethernet_core0/\ethernet_ipbus0/ipbus/udp_if /ipbus_rx_ram/ram2_reg"
+INFO: [Synth 8-5779] Default cascade height of 2 will be used for BRAM '"inst/ethernet_core0/\ethernet_ipbus0/ipbus/udp_if /ipbus_rx_ram/ram3_reg"'.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 8 for RAM "inst/ethernet_core0/\ethernet_ipbus0/ipbus/udp_if /ipbus_rx_ram/ram3_reg"
+INFO: [Synth 8-5779] Default cascade height of 2 will be used for BRAM '"inst/ethernet_core0/\ethernet_ipbus0/ipbus/udp_if /ipbus_rx_ram/ram4_reg"'.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 8 for RAM "inst/ethernet_core0/\ethernet_ipbus0/ipbus/udp_if /ipbus_rx_ram/ram4_reg"
+INFO: [Synth 8-5779] Default cascade height of 4 will be used for BRAM '"inst/ethernet_core0/\ethernet_ipbus0/ipbus/udp_if /ipbus_tx_ram/ram_reg"'.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 4 and width 18 for RAM "inst/ethernet_core0/\ethernet_ipbus0/ipbus/udp_if /ipbus_tx_ram/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 9 for RAM "inst/ethernet_core0/\ethernet_ipbus0/ipbus/udp_if /ipbus_tx_ram/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 4 for RAM "inst/ethernet_core0/\ethernet_ipbus0/ipbus/udp_if /ipbus_tx_ram/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "inst/ethernet_core0/\ethernet_ipbus0/ipbus/udp_if /ipbus_tx_ram/ram_reg"
+INFO: [Synth 8-5779] Default cascade height of 8 will be used for BRAM '"inst/ethernet_core0/fifo_async0/fifomem/mem_reg"'.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 36 for RAM "inst/ethernet_core0/fifo_async0/fifomem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 36 for RAM "inst/ethernet_core0/fifo_async0/fifomem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 36 for RAM "inst/ethernet_core0/fifo_async0/fifomem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 36 for RAM "inst/ethernet_core0/fifo_async0/fifomem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 36 for RAM "inst/ethernet_core0/fifo_async0/fifomem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 36 for RAM "inst/ethernet_core0/fifo_async0/fifomem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 36 for RAM "inst/ethernet_core0/fifo_async0/fifomem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 36 for RAM "inst/ethernet_core0/fifo_async0/fifomem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 4 and width 4 for RAM "inst/ethernet_core0/fifo_async0/fifomem/mem_reg"
+INFO: [Synth 8-5779] Default cascade height of 8 will be used for BRAM '"inst/ethernet_core0/fifo_async1/fifomem/mem_reg"'.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 36 for RAM "inst/ethernet_core0/fifo_async1/fifomem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 36 for RAM "inst/ethernet_core0/fifo_async1/fifomem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 36 for RAM "inst/ethernet_core0/fifo_async1/fifomem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 36 for RAM "inst/ethernet_core0/fifo_async1/fifomem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 36 for RAM "inst/ethernet_core0/fifo_async1/fifomem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 36 for RAM "inst/ethernet_core0/fifo_async1/fifomem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 36 for RAM "inst/ethernet_core0/fifo_async1/fifomem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 36 for RAM "inst/ethernet_core0/fifo_async1/fifomem/mem_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 4 and width 4 for RAM "inst/ethernet_core0/fifo_async1/fifomem/mem_reg"
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:56 . Memory (MB): peak = 3565.191 ; gain = 724.426 ; free physical = 7971 ; free virtual = 15475
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:21 ; elapsed = 00:02:06 . Memory (MB): peak = 3583.172 ; gain = 742.406 ; free physical = 7769 ; free virtual = 15277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:22 ; elapsed = 00:02:07 . Memory (MB): peak = 3594.172 ; gain = 753.406 ; free physical = 7758 ; free virtual = 15266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg_bram_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg_bram_18 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg_bram_26 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg_bram_34 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg_bram_42 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg_bram_50 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg_bram_58 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg_bram_66 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg_bram_74 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg_bram_74 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg_bram_73 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg_bram_73 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg_bram_72 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg_bram_72 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg_bram_71 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg_bram_71 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg_bram_70 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg_bram_70 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg_bram_69 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg_bram_69 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg_bram_68 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg_bram_68 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg_bram_67 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_to_fifo0/fifo_core_wrap_rx/fifo_async0/fifomem/mem_reg_bram_67 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg_bram_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg_bram_18 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg_bram_26 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg_bram_34 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg_bram_42 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg_bram_50 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg_bram_58 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg_bram_66 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg_bram_74 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg_bram_74 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg_bram_73 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg_bram_73 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg_bram_72 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg_bram_72 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg_bram_71 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg_bram_71 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg_bram_70 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg_bram_70 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg_bram_69 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg_bram_69 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg_bram_68 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg_bram_68 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg_bram_67 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/elink_core0/elink_transmitter0/fifo_core_wrap_tx/fifo_async0/fifomem/mem_reg_bram_67 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ethernet_core0/ethernet_ipbus0/ipbus/udp_if/internal_ram/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ethernet_core0/ethernet_ipbus0/ipbus/udp_if/ipbus_rx_ram/ram1_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ethernet_core0/ethernet_ipbus0/ipbus/udp_if/ipbus_rx_ram/ram2_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ethernet_core0/ethernet_ipbus0/ipbus/udp_if/ipbus_rx_ram/ram3_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ethernet_core0/ethernet_ipbus0/ipbus/udp_if/ipbus_rx_ram/ram4_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ethernet_core0/ethernet_ipbus0/ipbus/udp_if/ipbus_tx_ram/ram_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ethernet_core0/ethernet_ipbus0/ipbus/udp_if/ipbus_tx_ram/ram_reg_bram_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ethernet_core0/ethernet_ipbus0/ipbus/udp_if/ipbus_tx_ram/ram_reg_bram_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ethernet_core0/ethernet_ipbus0/ipbus/udp_if/ipbus_tx_ram/ram_reg_bram_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ethernet_core0/fifo_async0/fifomem/mem_reg_bram_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ethernet_core0/fifo_async0/fifomem/mem_reg_bram_17 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ethernet_core0/fifo_async0/fifomem/mem_reg_bram_25 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ethernet_core0/fifo_async0/fifomem/mem_reg_bram_33 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ethernet_core0/fifo_async0/fifomem/mem_reg_bram_41 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ethernet_core0/fifo_async0/fifomem/mem_reg_bram_49 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ethernet_core0/fifo_async0/fifomem/mem_reg_bram_57 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ethernet_core0/fifo_async0/fifomem/mem_reg_bram_65 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ethernet_core0/fifo_async0/fifomem/mem_reg_bram_69 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ethernet_core0/fifo_async1/fifomem/mem_reg_bram_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ethernet_core0/fifo_async1/fifomem/mem_reg_bram_17 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ethernet_core0/fifo_async1/fifomem/mem_reg_bram_25 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ethernet_core0/fifo_async1/fifomem/mem_reg_bram_33 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ethernet_core0/fifo_async1/fifomem/mem_reg_bram_41 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ethernet_core0/fifo_async1/fifomem/mem_reg_bram_49 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ethernet_core0/fifo_async1/fifomem/mem_reg_bram_57 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ethernet_core0/fifo_async1/fifomem/mem_reg_bram_65 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/ethernet_core0/fifo_async1/fifomem/mem_reg_bram_69 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:27 ; elapsed = 00:02:12 . Memory (MB): peak = 3691.219 ; gain = 850.453 ; free physical = 7750 ; free virtual = 15255
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3295] tying undriven pin txgen/CRC_CE_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin rxgen/CRC_CE_inferred:in0 to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:30 ; elapsed = 00:02:15 . Memory (MB): peak = 3691.223 ; gain = 850.457 ; free physical = 7748 ; free virtual = 15253
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:30 ; elapsed = 00:02:15 . Memory (MB): peak = 3691.223 ; gain = 850.457 ; free physical = 7750 ; free virtual = 15254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:31 ; elapsed = 00:02:16 . Memory (MB): peak = 3691.223 ; gain = 850.457 ; free physical = 7748 ; free virtual = 15253
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:31 ; elapsed = 00:02:16 . Memory (MB): peak = 3691.223 ; gain = 850.457 ; free physical = 7748 ; free virtual = 15253
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:32 ; elapsed = 00:02:17 . Memory (MB): peak = 3691.223 ; gain = 850.457 ; free physical = 7748 ; free virtual = 15253
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:32 ; elapsed = 00:02:17 . Memory (MB): peak = 3691.223 ; gain = 850.457 ; free physical = 7748 ; free virtual = 15253
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |BUFG        |     4|
+|2     |CARRY8      |   113|
+|3     |IDDRE1      |     1|
+|4     |LUT1        |   199|
+|5     |LUT2        |   832|
+|6     |LUT3        |   884|
+|7     |LUT4        |   766|
+|8     |LUT5        |  1261|
+|9     |LUT6        |  2085|
+|10    |MMCME3_BASE |     1|
+|11    |MUXF7       |    11|
+|12    |MUXF8       |     3|
+|13    |ODDRE1      |     1|
+|14    |RAMB18E2    |     1|
+|15    |RAMB36E2    |   312|
+|33    |SRL16       |     1|
+|34    |SRL16E      |    36|
+|35    |SRLC32E     |     7|
+|36    |FDCE        |   153|
+|37    |FDPE        |     5|
+|38    |FDRE        |  4889|
+|39    |FDSE        |   314|
+|40    |IBUFDS      |     2|
+|41    |OBUFDS      |     2|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:32 ; elapsed = 00:02:17 . Memory (MB): peak = 3691.223 ; gain = 850.457 ; free physical = 7748 ; free virtual = 15253
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:15 ; elapsed = 00:01:33 . Memory (MB): peak = 3691.223 ; gain = 334.727 ; free physical = 7787 ; free virtual = 15291
+Synthesis Optimization Complete : Time (s): cpu = 00:01:32 ; elapsed = 00:02:17 . Memory (MB): peak = 3691.227 ; gain = 850.457 ; free physical = 7787 ; free virtual = 15292
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.17 . Memory (MB): peak = 3691.227 ; gain = 0.000 ; free physical = 7869 ; free virtual = 15374
+INFO: [Netlist 29-17] Analyzing 138 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-326] The CLKFBOUT to CLKFBIN net for instance inst/ethernet_core0/ethernet_ipbus0/clocks/mmcm with COMPENSATION=INTERNAL is optimized away to aid design routability
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3723.238 ; gain = 0.000 ; free physical = 7797 ; free virtual = 15304
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 11 instances were transformed.
+  BUFG => BUFGCE: 4 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 2 instances
+  MMCME3_BASE => MMCME4_ADV: 1 instance 
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUF(x2)): 2 instances
+  ODDRE1 => OSERDESE3: 1 instance 
+  SRL16 => SRL16E: 1 instance 
+
+INFO: [Common 17-83] Releasing license: Synthesis
+416 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:47 ; elapsed = 00:02:55 . Memory (MB): peak = 3723.238 ; gain = 1252.871 ; free physical = 7971 ; free virtual = 15478
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint '/home/dcs/git/mopshub_readout/Vivado/mopshub_readout/mopshub_readout/mopshub_readout.runs/mopshub_readout_bd_mopshub_readout_0_0_synth_1/mopshub_readout_bd_mopshub_readout_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1174] Renamed 139 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/dcs/git/mopshub_readout/Vivado/mopshub_readout/mopshub_readout/mopshub_readout.runs/mopshub_readout_bd_mopshub_readout_0_0_synth_1/mopshub_readout_bd_mopshub_readout_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mopshub_readout_bd_mopshub_readout_0_0_utilization_synth.rpt -pb mopshub_readout_bd_mopshub_readout_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May  3 17:27:39 2024...

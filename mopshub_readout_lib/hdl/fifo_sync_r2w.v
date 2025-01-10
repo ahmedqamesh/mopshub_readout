@@ -17,13 +17,20 @@ module fifo_sync_r2w
 
     reg [ASIZE:0] wq1_rptr;
 
+    // Assigning wq2_rptr
     always @(posedge wclk) begin
-
         if (!wrst_n)
-            {wq2_rptr,wq1_rptr} <= 0;
+            wq2_rptr <= 0;
         else
-            {wq2_rptr,wq1_rptr} <= {wq1_rptr,rptr};
-
+            wq2_rptr <= wq1_rptr;
+    end
+    
+    // Assigning wq1_rptr
+    always @(posedge wclk) begin
+        if (!wrst_n)
+            wq1_rptr <= 0;
+        else
+            wq1_rptr <= rptr;
     end
 
 endmodule

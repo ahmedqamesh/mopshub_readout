@@ -26,14 +26,22 @@ module fifo_rptr_empty
     //-------------------
     // GRAYSTYLE2 pointer
     //-------------------
+    // Assigning rbin
     always @(posedge rclk) begin
-
         if (!rrst_n)
-            {rbin, rptr} <= 0;
+            rbin <= 0;
         else
-            {rbin, rptr} <= {rbinnext, rgraynext};
-
+            rbin <= rbinnext;
     end
+    
+    // Assigning rptr
+    always @(posedge rclk) begin
+        if (!rrst_n)
+            rptr <= 0;
+        else
+            rptr <= rgraynext;
+    end
+
 
     // Memory read-address pointer (okay to use binary to address memory)
     assign raddr     = rbin[ADDRSIZE-1:0];

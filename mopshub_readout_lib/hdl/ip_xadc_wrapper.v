@@ -2,7 +2,7 @@
 // Verilog Module mopshub_lib.ip_xadc_wrapper
 //
 // Created:
-//          by - dcs.dcs (chipdev2.physik.uni-wuppertal.de)
+//          by - Ahmed Qamesh (University of Wuppertal)
 //          at - 14:48:43 04/11/23
 //
 // using Mentor Graphics HDL Designer(TM) 2019.4 (Build 4)
@@ -16,13 +16,13 @@ module ip_xadc_wrapper
        (
 input wire           clk,             // Clock input for the dynamic reconfiguration port             
 input wire reset,            // Reset signal for the System Monitor control logic
-output wire busy_out,            // ADC Busy signal
 output wire [15 : 0]  do_out,              // Output data bus for dynamic reconfiguration port
 output wire [4 : 0] channel_out,         // Channel Selection Outputs
-output wire           drdy_out,            // Data ready signal for the dynamic reconfiguration port
-output wire           eos_out,             // End of Sequence Signal
-output wire           alarm_out);  
+output wire           drdy_out);            // Data ready signal for the dynamic reconfiguration port
 
+wire eos_out;             // End of Sequence Signal
+wire alarm_out;
+wire busy_out;            // ADC Busy signal
 xadc_wiz_0 xadc_wiz_inst (
             .daddr_in({{2{1'b0}},channel_out}),// Address bus for the dynamic reconfiguration port
             .dclk_in(clk),

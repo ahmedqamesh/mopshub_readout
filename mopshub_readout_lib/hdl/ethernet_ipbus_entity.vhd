@@ -70,7 +70,7 @@ entity ethernet_ipbus is
 end ethernet_ipbus;
 
 architecture rtl of ethernet_ipbus is
-	signal sysclk, sysclk_out, clk_ipb, clk_ipb_i, clk_aux, locked, clk_locked, rst125, rst_ipb, rst_ipb_ctrl, rst_aux, onehz, pkt:std_logic; --
+	signal sysclk,sysclk_out, clk_ipb, clk_ipb_i, clk_aux, locked, clk_locked, rst125, rst_ipb, rst_ipb_ctrl, rst_aux, onehz, pkt:std_logic; --
 	signal led_p: std_logic_vector(0 downto 0);
 	signal mac_addr: std_logic_vector(47 downto 0);
 	signal ip_addr: std_logic_vector(31 downto 0);  
@@ -88,13 +88,13 @@ begin
 			o => sysclk
 		);
 
-		   BUFG_inst : BUFG
+   BUFG_inst : BUFG
    port map (
       O => sysclk_out, -- 1-bit output: Clock output.
       I => sysclk  -- 1-bit input: Clock input.
    );
---	DCM clock generation for internal bus, ethernet
 
+--	DCM clock generation for internal bus, ethernet
 	clocks: entity work.clocks_us_serdes
 		generic map(
 			CLK_AUX_FREQ => 40.0 --CLK_AUX_FREQ
@@ -119,8 +119,9 @@ begin
 	locked <= clk_locked and eth_locked;
 	clk_ipb <= clk_ipb_i; -- Best to align delta delays on all clocks for simulation
 	mac_addr <= X"020ddba1151" & dip_sw; -- Careful here, arbitrary addresses do not always work
-  --ip_addr <= X"c0a8c81" & dip_sw; -- 192.168.200.16+n
-  ip_addr <= X"84c36819"; -- 132.195.104.25 -- for Uni Wuppertal IP netmask: 255.255.248.0
+  ip_addr <= X"c0a8c81" & dip_sw; -- 192.168.200.16+n
+  --ip_addr <= X"84c36819"; -- 132.195.104.25 -- for Uni Wuppertal IP netmask: 255.255.248.0
+  
   leds(7 downto 2) <= "00000" & userled;
   
   
